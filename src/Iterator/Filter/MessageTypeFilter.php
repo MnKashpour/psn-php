@@ -18,7 +18,7 @@ class MessageTypeFilter extends FilterIterator
         $this->type = $type;
     }
 
-    public function accept()
+    public function accept(): bool
     {
         $a = $this->current();
         $b = $this->type;
