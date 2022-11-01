@@ -49,7 +49,7 @@ class TrophyIterator extends AbstractApiIterator
         $this->update($results->totalItemCount, $results->trophies);
     }
 
-    public function current()
+    public function current(): mixed
     {
         return Trophy::fromObject(
             $this->trophyGroup,

@@ -48,7 +48,7 @@ class TrophyGroupsIterator extends AbstractApiIterator
         $this->update(count($results->trophyGroups), $results->trophyGroups);
     }
 
-    public function current()
+    public function current(): mixed
     {
         if ($this->title instanceof UserTrophyTitle)
         {

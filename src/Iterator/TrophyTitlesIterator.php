@@ -35,7 +35,7 @@ class TrophyTitlesIterator extends AbstractApiIterator
         $this->update($results->totalItemCount, $results->trophyTitles);
     }
 
-    public function current()
+    public function current(): mixed
     {
 		$title = new UserTrophyTitle($this->trophyTitlesFactory->getHttpClient());
 		$title->setFactory($this->trophyTitlesFactory);

@@ -60,7 +60,7 @@ abstract class AbstractApiIterator extends Api implements Iterator, Countable
      *
      * @return integer|string
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->currentOffset;
     }
@@ -111,7 +111,7 @@ abstract class AbstractApiIterator extends Api implements Iterator, Countable
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
         $this->currentOffset = 0;
     }
