@@ -146,7 +146,7 @@ class UserTrophyTitle extends AbstractTrophyTitle
      */
     public function npCommunicationId(): string
     {
-        return $this->pluck('npCommunicationId');
+        return $this->npCommuncationId ??= $this->pluck('npCommunicationId');
     }
 
     /**
